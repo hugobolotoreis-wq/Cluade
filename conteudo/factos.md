@@ -6,15 +6,17 @@ Só o Hugo edita este ficheiro. Se um número não está aqui nem nas notas da s
 
 - Mais de 40 campanhas de prospeção feitas desde 2025.
 - Mais de 8.000 contactos trabalhados.
-- LinkedIn: cerca de 20% de aceitação dos pedidos de ligação.
+- Mais de 60.000 euros em pipeline gerado
+- LinkedIn: cerca de 23% de aceitação dos pedidos de ligação.
 - LinkedIn: cerca de 24% de resposta às mensagens.
 - Email: a métrica ainda não está confirmada. Não usar.
 - Equipa: Hugo (comercial, estratégia, campanhas) e Tomás (desenvolvimento).
 - O Hugo é estudante do último ano na FCUP.
+- O Tomás trabalha na NTT Data
 
 ## GenitecSales
 
-- O que faz hoje: pesquisa de empresas e decisores (incluindo fora de Portugal), campanhas LinkedIn + email, tarefas para follow-ups manuais, CRM.
+- O que faz hoje: pesquisa de empresas e decisores (Internacionalmente), campanhas LinkedIn + email, tarefas e CRM para gestão das vendas.
 - Lançamento previsto: fim de janeiro ou início de fevereiro de 2027.
 - Data exata da abertura à lista de espera: [POR DEFINIR]
 - Endereço da lista de espera: [POR DEFINIR]
