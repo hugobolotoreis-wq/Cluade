@@ -1,0 +1,10 @@
+<!doctype html><html><head><meta charset="utf-8"><link rel="stylesheet" href="base.css">
+<style>.titulo{font-size:72px;font-weight:800;line-height:1.1;max-width:900px}.barras{display:flex;flex-direction:column;gap:34px;margin-top:20px}.linha{display:flex;flex-direction:column;gap:12px}.rot{font-size:40px;display:flex;justify-content:space-between}.rot b{color:#e8622a}.trilho{height:44px;background:#2a2b31;border-radius:6px}.enche{height:44px;background:#e8622a;border-radius:6px}</style></head>
+<body><div class="barra"></div><div><p class="marca">{{etiqueta}}</p><p class="titulo" style="margin-top:40px">{{titulo}}</p></div>
+<div class="barras" id="b"></div>
+<p class="rodape">{{fonte}}</p>
+<script>
+const dados={{dados}}; // [{"rotulo":"Contactos","valor":1000}, ...]
+const max=Math.max(...dados.map(d=>d.valor));
+document.getElementById('b').innerHTML=dados.map(d=>`<div class="linha"><div class="rot"><span>${d.rotulo}</span><b>${String(d.valor).replace(/\B(?=(\d{3})+(?!\d))/g,'.')}</b></div><div class="trilho"><div class="enche" style="width:${Math.max(2,d.valor/max*100)}%"></div></div></div>`).join('');
+</script></body></html>

@@ -1,0 +1,6 @@
+*{margin:0;padding:0;box-sizing:border-box}
+html,body{width:1080px;height:1350px}
+body{background:#17181c;color:#f2efe8;font-family:'Archivo','Helvetica Neue',Arial,sans-serif;display:flex;flex-direction:column;justify-content:space-between;padding:110px 96px 96px;position:relative}
+.barra{position:absolute;left:0;top:0;width:18px;height:1350px;background:#e8622a}
+.marca{font-family:'IBM Plex Mono','Courier New',monospace;font-size:30px;letter-spacing:3px;color:#e8622a}
+.rodape{font-family:'IBM Plex Mono','Courier New',monospace;font-size:28px;color:#9a9890}
