@@ -34,11 +34,12 @@ As respostas da pesquisa do Treg podem ter mais de 100.000 caracteres (50 posts 
 
 ## Filtro Portugal (obrigatório)
 
-Um autor só passa se tiver sinais claros de Portugal e nenhum do Brasil.
+Um autor só passa se tiver sinais claros de Portugal e nenhum do Brasil. Decide pelo conjunto de sinais, nunca por uma palavra isolada.
 
-- **Exclui** se o texto ou o cargo tiver grafia ou vocabulário brasileiro: "prospecção", "equipe", "você", "time de vendas", "faturamento", "ação" no sentido de ações de marketing, "contato", "celular", "gerente comercial" combinado com outras marcas brasileiras, referências a cidades ou estados do Brasil, R$.
-- **Aceita** se tiver português europeu ("equipa", "faturação", "contacto", "telemóvel", "prospeção") ou referência a Portugal, cidades portuguesas ou empresas portuguesas no cargo.
-- Na dúvida, exclui.
+- **Sinais do Brasil:** "equipe", "você" como tratamento, "time de vendas", "faturamento", "contato", "celular", "usuário", gerúndio constante ("estamos fazendo"), referências a cidades ou estados do Brasil, R$, empresas brasileiras no cargo.
+- **Sinais de Portugal:** "equipa", "faturação", "contacto", "telemóvel", "utilizador", "estamos a fazer", referência a Portugal, cidades ou empresas portuguesas, €.
+- **Não decidem sozinhas** (usam-se nos dois países): "prospecção" e "prospeção", "vendas", "clientes", "comercial", "gestor".
+- Na dúvida, vê a localização do perfil (treg.linkedin.user.profile). Se continuar a dúvida, exclui.
 
 ## Escolha e escrita
 
