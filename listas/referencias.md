@@ -15,6 +15,6 @@ Acrescentar: fundadores e criadores portugueses de vendas B2B quando forem ident
 
 ## Perfil próprio
 
-| Pessoa | Perfil |
-|---|---|
-| Hugo Reis | [PREENCHER: identificador do perfil do Hugo] |
+| Pessoa | Perfil | URN |
+|---|---|---|
+| Hugo Reis | hugo-reis-genitec (https://www.linkedin.com/in/hugo-reis-genitec/) | urn:li:person:bWeb9H8TYj |
