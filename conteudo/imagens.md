@@ -26,7 +26,7 @@ Formato: 1080 x 1350 px (vertical), PNG.
 ## Como gerar
 
 ```
-node scripts/render.mjs templates/cartao-numero.html '{"etiqueta":"GENITEC · DESDE 2025","numero":"8.000","legenda":"contactos trabalhados desde 2025"}' semanas/2026-W45/img/post-a.png
+node scripts/render.mjs templates/cartao-numero.html '{"etiqueta":"GENITEC · DESDE 2025","numero":"15.000","legenda":"contactos trabalhados desde 2025"}' semanas/2026-W45/img/post-a.png
 ```
 
 O script substitui cada `{{chave}}` do modelo pelo valor do JSON e grava o PNG. Se o Chromium do Playwright não estiver disponível, define `CHROME_PATH` com o caminho de um Chrome headless.
