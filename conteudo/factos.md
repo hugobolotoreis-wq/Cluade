@@ -17,8 +17,8 @@ Só o Hugo edita este ficheiro. Se um número não está aqui nem nas notas da s
 - Para quem: todas as empresas B2B que querem vender mais, ter melhores resultados comerciais e poupar tempo em vendas. Não é só para indústria nem só para exportadores.
 - O que faz hoje: pesquisa de empresas e decisores (incluindo fora de Portugal), campanhas LinkedIn + email, tarefas para follow-ups manuais, CRM.
 - Lançamento previsto: fim de janeiro ou início de fevereiro de 2027.
-- Quem o desenvolve: a Genitec. É um produto próprio, construído a partir das campanhas que fazemos para clientes.
-- Benefício da lista de espera: 21% de desconto, acesso antecipado, onboarding gratuito.
+- Quem o desenvolve: a Genitec. É um produto próprio, nascido das campanhas que fazemos para clientes. A autoria é assumida publicamente.
+- Benefícios da lista de espera: 21% de desconto, acesso antecipado e onboarding gratuito. Os 21% são iguais em todo o lado: site, conteúdo e chamadas.
 - Data exata da abertura: 1 semana de fevereiro para o publico todo
 - Endereço da lista de espera: [POR DEFINIR]
 
@@ -36,3 +36,4 @@ Só o Hugo edita este ficheiro. Se um número não está aqui nem nas notas da s
 
 - 2026-10-26: ficheiro criado.
 - 2026-10-29: ICP do GenitecSales alargado a todas as empresas B2B.
+- 2026-11-09: números atualizados (45 campanhas, 15.000 contactos, 26%, 27%, 7%). Autoria do GenitecSales passa a ser assumida. Desconto fixado em 21%.

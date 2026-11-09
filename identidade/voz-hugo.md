@@ -2,7 +2,7 @@
 
 ## Quem fala
 
-Fundador da Genitec, estudante do último ano na FCUP, a construir o GenitecSales com o Tomás. Já fez mais de 40 campanhas de prospeção para clientes. Fala de dentro: viu o que funciona e o que falha nas vendas B2B em Portugal.
+Fundador da Genitec, estudante do último ano na FCUP, a construir o GenitecSales com o Tomás. Já fez mais de 45 campanhas de prospeção para clientes. Fala de dentro: viu o que funciona e o que falha nas vendas B2B em Portugal.
 
 ## Tom
 
@@ -27,5 +27,5 @@ Fundador da Genitec, estudante do último ano na FCUP, a construir o GenitecSale
 
 ## Exemplos de tom (a afinar com o Hugo)
 
-- Bom: "Fizemos 40 campanhas no último ano. O que mais falhava não era a mensagem. Era o segundo follow-up que ninguém enviava."
+- Bom: "Fizemos 45 campanhas no último ano. O que mais falhava não era a mensagem. Era o segundo follow-up que ninguém enviava."
 - Mau: "No mundo dinâmico das vendas B2B, a prospeção é fundamental para o sucesso."

@@ -36,6 +36,8 @@ Routines (em `routines/`): Manager semanal (domingo 22:00), Publicador (diário 
 | `identidade/voz-hugo.md` | Como o Hugo escreve |
 | `identidade/persona-genitec.md` | Como a página da Genitec comenta |
 | `conteudo/` | Factos, estratégia, hooks, CTAs, regras de imagem |
+| `conteudo/plataformas.md` | O que muda entre perfil do Hugo, página da Genitec e Instagram |
+| `dados/capacidades-treg.md` | O que é publicável por API e o que é manual |
 | `biblioteca/porques.md` | Padrões que funcionam, com provas |
 | `listas/referencias.md` | Perfis para aprender (GTM e outbound) |
 | `listas/alvos.md` | Perfis e palavras-chave onde comentar (ICP português) |
@@ -55,6 +57,7 @@ Routines (em `routines/`): Manager semanal (domingo 22:00), Publicador (diário 
 6. Primeira linha dos posts com menos de 12 palavras.
 7. Links nunca no texto do post; vão no primeiro comentário.
 8. Antes de entregar texto, aplica as skills `stop-slop` e `humanizer` (`.claude/skills/`).
+9. Lê `conteudo/plataformas.md` antes de escrever. O que serve o LinkedIn não serve o Instagram.
 
 ## Regra de verdade
 
@@ -72,6 +75,24 @@ Antes de qualquer chamada, `treg catalog get <endpoint>` para confirmar parâmet
 | Perfil (seguidores) | `treg.linkedin.user.profile` / `treg.linkedin.company.profile` | cêntimos |
 | Publicar no perfil do Hugo | `linkedin.linkedin.user.post.create` | 0 $ |
 
-Publicar com imagem pela API: A CONFIRMAR (o endpoint só publica texto; falta o carregamento de imagem). Até lá, o Publicador trabalha em modo manual.
+Imagem no LinkedIn: dois passos. `linkedin.linkedin.image.upload.init` devolve `{uploadUrl, image}`,
+os bytes vão por PUT ao `uploadUrl` (que expira depressa) e o URN `urn:li:image:ID` entra no post.
+O campo `content` não está no esquema do `post.create`, por isso falta um teste real.
+PDF de carrossel: mesma forma em `/rest/documents?action=initializeUpload`, fora do catálogo.
+Esperar cerca de 10 s pelo processamento.
+
+Página de empresa: NÃO publicável. A ligação atual tem os âmbitos openid, profile, email e
+w_member_social, nenhum de organização. Todos os endpoints usam `urn:li:person:{sub}`.
+Pedir ao catálogo com `treg catalog request`. Até lá, a página é publicada à mão.
+
+Escape obrigatório no `commentary`: ( ) [ ] { } < > @ | ~ com barra invertida.
+Sem agendamento na API: a hora vem das rotinas.
+Token da ligação expira a 25/12/2026. Renovar até 20/12/2026.
+`LinkedIn-Version: 202601` é retirado a cada trimestre. Validar antes de publicar.
+
+Instagram: os quatro formatos são publicáveis (feed, carrossel de 2 a 10, Reel, Story).
+Fluxo: `media.container.create`, esperar `FINISHED` em `container.status`, `post.publish`.
+Só JPEG e só com URL público. Limite da Meta: 100 publicações por API em 24 h.
+Falta ligar a credencial: `treg connections connect --provider instagram --capability post`.
 
 Não existe endpoint para comentar, e nenhum agente deve tentar comentar, reagir ou enviar mensagens por outra via.

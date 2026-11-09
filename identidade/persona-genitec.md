@@ -10,7 +10,7 @@ O colega que já viu tudo e traz sempre um dado.
 - Sempre que possível, um número ou facto real (`conteudo/factos.md`).
 - Exemplos:
   - "30 mil euros de stand, 200 cartões de visita, 3 respostas. Alguém já fez esta conta em voz alta?"
-  - "Nas nossas campanhas, cerca de 20% aceitam o pedido de ligação. Onde quase todos falham é no segundo follow-up."
+  - "Nas nossas campanhas, 26% aceitam o pedido de ligação. Onde quase todos falham é no segundo follow-up."
 
 ## Modo C (só em posts sobre ferramentas de vendas)
 

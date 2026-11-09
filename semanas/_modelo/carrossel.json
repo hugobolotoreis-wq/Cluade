@@ -1,0 +1,24 @@
+{
+  "etiqueta": "GENITECSALES",
+  "pastilha": { "texto": "Em construcao", "estilo": "" },
+  "fundo_capa": "fundo-escuro",
+  "titulo": "O que custa mesmo<br>uma <em>lista de contactos</em>",
+  "chamada": "Arrasta",
+  "slides": [
+    {
+      "titulo": "Primeiro<br>as empresas",
+      "palco": "<p class=\"numerao\">1.</p>",
+      "corpo": "Pais, setor e dimensao antes de pensar em pessoas. Lista de empresas errada, campanha perdida."
+    },
+    {
+      "titulo": "Depois os decisores",
+      "pastilha": { "texto": "Ja disponivel", "estilo": "viva" },
+      "corpo": "Confirma o cargo na seccao Experiencia. Titulos em bases de dados ficam velhos em meses."
+    },
+    {
+      "titulo": "A lista de espera<br>esta <em>aberta</em>",
+      "fundo": "fundo-laranja",
+      "corpo": "21% de desconto, acesso antecipado e onboarding gratuito."
+    }
+  ]
+}
