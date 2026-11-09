@@ -6,7 +6,7 @@ Usa estes como padrão de estrutura, não como texto fixo. Varia sempre.
 
 | Tópico | Original | Resultado | Versão Genitec |
 |---|---|---|---|
-| Origem | MailMoo: "Enviámos mais de 25.000 cold emails na nossa agência, daí nasceu a ideia" | 98 reações | "Em 2025 fizemos mais de 40 campanhas para clientes. Em todas, o problema era o mesmo." |
+| Origem | MailMoo: "Enviámos mais de 25.000 cold emails na nossa agência, daí nasceu a ideia" | 98 reações | "Em 2025 fizemos mais de 45 campanhas para clientes. Em todas, o problema era o mesmo." |
 | Origem / marco | MailMoo: anúncio da ronda, "equipa fundadora com menos de 23 anos" | 379 reações | "Sou estudante da FCUP e decidimos construir o software que nos faltava." |
 | Construção | MailMoo: "Mais de 100 tickets em produção em 2 meses" | 62 reações | "[X] funcionalidades em [Y] semanas. Esta é a que mais nos custou." |
 | Construção | MailMoo: "Refiz o site. O que acham?" | 38 reações, 12 comentários | "Este é o primeiro ecrã que um cliente vai ver. O que mudavas?" |
