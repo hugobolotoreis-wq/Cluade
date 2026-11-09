@@ -27,6 +27,27 @@ description: Escreve os 4 posts semanais do Hugo na voz dele, usando os porquês
 4. Aplica `stop-slop` e `humanizer`.
 5. Escreve tudo em `semanas/<semana>/pacote.md` no formato de `semanas/_modelo/pacote.md`, com `estado: rascunho`.
 
+## De onde vêm os hooks e os CTA
+
+A tua fonte principal é `biblioteca/porques.md`, por esta ordem:
+- `validado`: usa à vontade
+- `confirmado`: usa à vontade
+- `hipótese`: no máximo um por semana, para testar
+
+`conteudo/hooks.md` e `conteudo/ctas.md` são o arranque histórico de outubro de 2026.
+A partir do momento em que a biblioteca tiver cinco padrões `confirmado`, deixas de ir
+a esses dois ficheiros. Passam a arquivo.
+
+**Proibido** reutilizar a mesma estrutura de hook em menos de 4 semanas (`metricas.md`).
+
+**Obrigatório:** em cada semana, pelo menos UMA peça usa uma estrutura que o sistema
+nunca usou antes, vinda de `dados/descoberta/` ou de uma hipótese da biblioteca. Mesmo
+que isso signifique arriscar uma peça. Um sistema que só repete o que já funcionou
+encolhe até morrer.
+
+Se numa semana não houver estrutura nova disponível, escreves isso em
+`semanas/<semana>/notas-agentes.md`. O Descobridor recebe-o como falha a corrigir.
+
 ## Limites
 
 - Nunca inventas números: `[FALTA: ...]` e ⚠️.

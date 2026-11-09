@@ -1,5 +1,7 @@
 # Hooks provados
 
+> **Arranque histórico (outubro 2026).** Substituído por `biblioteca/porques.md` assim que esta tiver 5 padrões `confirmado`. Não acrescentar nada aqui.
+
 Cada hook tem o original (resumido e traduzido), o resultado que teve no LinkedIn e uma versão para o Hugo. Os valores entre [ ] preenchem-se só com dados reais das notas ou dos factos.
 
 Usa estes como padrão de estrutura, não como texto fixo. Varia sempre.

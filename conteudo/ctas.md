@@ -1,5 +1,7 @@
 # CTAs
 
+> **Arranque histórico (outubro 2026).** Substituído por `biblioteca/porques.md` assim que esta tiver 5 padrões `confirmado`. Não acrescentar nada aqui.
+
 Do mais leve ao mais direto. No máximo 1 CTA de lista de espera por semana.
 
 | Tipo | Tópicos | Exemplo |

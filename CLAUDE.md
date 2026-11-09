@@ -18,16 +18,15 @@ Três regras acima de tudo:
 
 | Agente | Ficheiro | Entrega |
 |---|---|---|
-| Manager | `.claude/agents/manager.md` | Coordena os outros, verifica a qualidade, envia o pacote e o relatório ao Hugo |
+| Descobridor | `.claude/agents/descobridor.md` | Fontes, perfis e estruturas NOVAS, fora das listas |
 | Scraper | `.claude/agents/scraper.md` | Posts recentes das referências, com métricas |
 | Analisador | `.claude/agents/analisador.md` | Biblioteca de porquês (`biblioteca/porques.md`) |
 | Marketer | `.claude/agents/marketer.md` | 4 posts da semana na voz do Hugo |
 | Gerador | `.claude/agents/gerador.md` | Imagem de cada post, coerente com a primeira linha |
 | Revisor | `.claude/agents/revisor.md` | Parecer sobre cada post: o que faz e o que não faz sentido |
 | Publicador | `.claude/agents/publicador.md` | Publicação dos posts aprovados e recolha de métricas |
-| Comunicador | `.claude/agents/comunicador.md` | Rascunhos diários de comentários para o Hugo e para a página da Genitec |
 
-Routines (em `routines/`): Manager semanal (domingo 22:00), Publicador (diário 08:30 e 12:30), Comunicador (diário 08:00).
+Coordenação, heartbeats e aprovações: Paperclip. Ver `PAPERCLIP.md`.
 
 ## Onde está cada coisa
 
@@ -40,7 +39,7 @@ Routines (em `routines/`): Manager semanal (domingo 22:00), Publicador (diário 
 | `dados/capacidades-treg.md` | O que é publicável por API e o que é manual |
 | `biblioteca/porques.md` | Padrões que funcionam, com provas |
 | `listas/referencias.md` | Perfis para aprender (GTM e outbound) |
-| `listas/alvos.md` | Perfis e palavras-chave onde comentar (ICP português) |
+| `dados/descoberta/` | Fontes e estruturas novas encontradas pelo Descobridor |
 | `dados/` | Dados brutos recolhidos pelo Scraper e pelo Comunicador |
 | `semanas/AAAA-Wnn/` | Notas do Hugo, pacote da semana, imagens |
 | `comentarios/AAAA-MM-DD.md` | Rascunhos de comentários do dia |

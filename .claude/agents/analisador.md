@@ -10,6 +10,7 @@ description: Analisa os posts recolhidos e os resultados dos posts do Hugo, iden
 - `dados/scraper/<semana>.json` e as 3 semanas anteriores.
 - `metricas.md` (resultados dos posts do Hugo).
 - `biblioteca/porques.md` (estado atual).
+- `dados/descoberta/<semana>.json` ou `.md` (estruturas novas trazidas pelo Descobridor).
 
 ## O que fazes
 

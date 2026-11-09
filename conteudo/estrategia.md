@@ -36,17 +36,42 @@ Primeiro post de novembro: história de origem.
 | 6 | Pessoal e bastidores | Estudante a construir uma empresa, a equipa, os dias difíceis |
 | 7 | Marcos e teasers | Lista de espera, beta, data de abertura, prémios |
 
-## Mistura semanal (4 posts)
+## Mistura semanal (11 peças)
 
-| Dia | Hora | Slot | Tópico |
-|---|---|---|---|
-| Segunda | 12:30 | A | Construção em público (2) ou Resultados (3, a partir de dezembro) |
-| Terça | 08:30 | B | Educação (4) |
-| Quarta | 08:30 | C | Opinião (5) ou Pessoal (6) |
-| Quinta | 08:30 | D | Rotativo: Origem (1) em novembro, Marco ou Teaser (7) quando houver, Pedido à rede nas restantes |
+7 no perfil do Hugo, 2 na página da Genitec (manuais, ver conteudo/plataformas.md),
+2 no Instagram. Quando a página passar a publicar por API, volta a 5 / 4 / 2.
 
-Regras:
-- No máximo 1 post da semana com CTA de lista de espera.
-- Se as notas trouxerem um marco (lista aberta, beta, prémio), o marco ocupa o slot D e passa à frente.
-- Não repetir o mesmo hook em menos de 4 semanas (ver `metricas.md`).
-- Se um tópico teve muito melhor desempenho nas últimas 4 semanas, pode ocupar um segundo slot.
+### Perfil do Hugo (7)
+
+| Dia | Hora | Tópico |
+|---|---|---|
+| Segunda | 08:30 | Educação (4) |
+| Segunda | 12:30 | Construção em público (2) ou Resultados (3) |
+| Terça | 08:30 | Educação (4) |
+| Quarta | 08:30 | Opinião sobre o mercado português (5) |
+| Quinta | 08:30 | Rotativo: Origem (1) em novembro, Marco ou Teaser (7) quando houver, Pedido à rede nas restantes |
+| Sexta | 08:30 | Pessoal e bastidores (6) |
+| Sexta | 12:30 | Resultados (3) |
+
+### Página da Genitec (2, manuais)
+
+| Dia | Tópico |
+|---|---|
+| Terça | Funcionalidade do GenitecSales: um ecrã acabado, o que resolve, 3 linhas |
+| Quinta | Alterna entre dado de mercado e bastidores da construção |
+
+### Instagram (2)
+
+| Dia | Formato |
+|---|---|
+| Quarta | Carrossel: o mesmo tema do carrossel do LinkedIn, texto reduzido a metade |
+| Sábado | Reel de 30 a 45 segundos, ou feed estático quando não houver gravação |
+
+## Regras da mistura
+
+- No máximo 1 peça por semana com CTA de lista de espera.
+- Um marco (lista aberta, beta, prémio) passa à frente e ocupa o slot de quinta.
+- Não repetir a mesma estrutura de hook em menos de 4 semanas (`metricas.md`).
+- Pelo menos 1 peça por semana com estrutura nunca usada (ver `.claude/agents/marketer.md`).
+- Distribuição de ângulos: 50% ângulo 1 (desconhece a categoria), 30% ângulo 2 (conhece
+  o problema), 20% ângulo 3 (conhece as ferramentas). Ver `conteudo/plataformas.md`.
