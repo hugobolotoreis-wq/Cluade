@@ -34,6 +34,7 @@ section{width:1080px;height:1350px;position:relative;overflow:hidden;display:blo
 #s1 .pe{position:absolute;left:96px;right:96px;bottom:120px;z-index:2}
 #s1 .pe img{height:62px;display:block;margin-bottom:26px}
 #s1 .pe p{color:var(--bg);font-weight:700;font-size:50px;line-height:1.2}
+#s1 .pe .claro{color:#fff}
 
 /* ---------- 2. CARTOES DE CONTACTO ---------- */
 #s2{background:var(--ink);color:var(--bg);padding:96px 64px}
@@ -49,6 +50,7 @@ section{width:1080px;height:1350px;position:relative;overflow:hidden;display:blo
 #s2 .campo b{display:block;font-weight:700;font-size:21px;letter-spacing:1.4px;
   text-transform:uppercase;color:rgba(14,12,11,.45);margin-bottom:5px}
 #s2 .sinal{color:var(--accent);font-weight:600}
+#s2 .privado{filter:blur(6px);user-select:none}
 #s2 .legenda{text-align:center;font-weight:600;font-size:46px;line-height:1.22;
   max-width:880px;margin:44px auto 0}
 
@@ -56,14 +58,15 @@ section{width:1080px;height:1350px;position:relative;overflow:hidden;display:blo
 #s3{background:var(--accent);color:var(--bg);padding:96px 64px}
 #s3 .conteudo{height:100%;display:flex;flex-direction:column}
 #s3 .titulo{font-size:84px;text-align:center;margin-top:44px}
-#s3 .palco{flex:1;position:relative;margin-top:26px}
+#s3 .palco{flex:1;position:relative;margin-top:20px}
+#s3 .legenda{text-align:center;font-weight:700;font-size:44px;line-height:1.2;max-width:880px;margin:0 auto}
 #s3 .nucleo{position:absolute;left:50%;top:26px;transform:translateX(-50%);
   width:620px;height:230px;background:var(--ink);color:var(--bg);
   display:flex;align-items:center;justify-content:center;
   box-shadow:14px 14px 0 rgba(14,12,11,.22)}
 #s3 .etiqueta-nucleo{font-weight:700;font-size:52px;text-align:center;line-height:1.1}
 #s3 svg{position:absolute;inset:0}
-#s3 .ramos{position:absolute;left:0;right:0;top:430px;display:flex}
+#s3 .ramos{position:absolute;left:0;right:0;top:474px;display:flex}
 #s3 .ramo{flex:1;text-align:center;font-weight:700;font-size:46px;line-height:1.15;padding:0 10px}
 #s3 .marca{position:absolute;left:50%;bottom:4px;transform:translateX(-50%);height:46px;opacity:.75}
 
@@ -71,8 +74,9 @@ section{width:1080px;height:1350px;position:relative;overflow:hidden;display:blo
 #s4{background:var(--bg);color:var(--ink);padding:96px 64px}
 #s4 .conteudo{height:100%;display:flex;flex-direction:column}
 #s4 .titulo{font-size:100px;text-align:center;margin-top:44px;color:var(--ink)}
-#s4 .palco{flex:1;display:flex;align-items:center;gap:30px}
-#s4 .caixa{flex:1;padding:46px 36px;height:620px;position:relative}
+#s4 .palco{flex:1;display:flex;align-items:flex-start;gap:30px;margin-top:40px}
+#s4 .legenda{text-align:center;font-weight:700;font-size:40px;line-height:1.25;max-width:840px;margin:0 auto}
+#s4 .caixa{flex:1;padding:44px 34px;height:560px;position:relative}
 #s4 .mau{background:rgba(244,239,233,.07);border:2px solid rgba(244,239,233,.26)}
 #s4 .bom{background:var(--accent);color:var(--bg)}
 #s4 .cab{font-weight:700;font-size:40px;margin-bottom:34px;line-height:1.1}
@@ -123,14 +127,14 @@ section{width:1080px;height:1350px;position:relative;overflow:hidden;display:blo
    radial-gradient(85% 55% at 42% 116%, #B5431A 0%, rgba(14,12,11,0) 78%);
   filter:blur(6px)}
 #s6 .conteudo{position:relative;height:100%;display:flex;flex-direction:column;
-  align-items:center;padding:150px 72px 120px;text-align:center}
+  align-items:center;justify-content:center;gap:92px;padding:120px 72px;text-align:center}
 #s6 .segreda{font-weight:600;font-size:40px;color:var(--ink);letter-spacing:.5px}
-#s6 .titulo{font-size:124px;color:var(--accent-2);margin-top:28px}
-#s6 .qr{margin-top:84px;width:400px;height:400px;background:var(--ink);
+#s6 .titulo{font-size:124px;color:var(--accent-2)}
+#s6 .qr{width:400px;height:400px;background:var(--ink);
   display:flex;align-items:center;justify-content:center;
   box-shadow:0 24px 60px rgba(0,0,0,.45)}
 #s6 .qr span{font-family:var(--mono);font-size:24px;color:rgba(14,12,11,.4)}
-#s6 .assinatura{margin-top:auto}
+#s6 .assinatura{margin-top:0}
 #s6 .assinatura img{height:64px}
 </style></head>
 <body>
@@ -146,7 +150,7 @@ section{width:1080px;height:1350px;position:relative;overflow:hidden;display:blo
   <h1 class="titulo serif"><span>O que vem</span><br><span class="l2">aí no</span><br><span class="l3">GenitecSales</span></h1>
   <div class="pe">
     <img src="../../media/marca/logo-escuro.png" alt="GenitecSales">
-    <p>Vamos automatizar as vendas<br>da tua empresa? →</p>
+    <p>Vamos <span class="claro">automatizar as vendas</span><br>da tua empresa? →</p>
   </div>
 </section>
 
@@ -159,21 +163,21 @@ section{width:1080px;height:1350px;position:relative;overflow:hidden;display:blo
       <div class="cartao">
         <p class="campo"><b>Nome</b>Ricardo Silva</p>
         <p class="campo"><b>Empresa</b>Tintex Textiles</p>
-        <p class="campo"><b>Email</b>r.silva@tintex.pt</p>
+        <p class="campo"><b>Email</b><span class="privado">r.silva@tintex.pt</span></p>
         <p class="campo"><b>LinkedIn</b>/in/ricardo-silva</p>
         <p class="campo"><b>Sinal</b><span class="sinal">Abriu vaga de export</span></p>
       </div>
       <div class="cartao">
         <p class="campo"><b>Nome</b>Bruna Nunes</p>
         <p class="campo"><b>Empresa</b>DGL Têxtil</p>
-        <p class="campo"><b>Email</b>bruna@dgltextil.pt</p>
+        <p class="campo"><b>Email</b><span class="privado">bruna@dgltextil.pt</span></p>
         <p class="campo"><b>LinkedIn</b>/in/bruna-nunes</p>
         <p class="campo"><b>Sinal</b><span class="sinal">Nova coleção em FR</span></p>
       </div>
       <div class="cartao">
         <p class="campo"><b>Nome</b>Tiago Gomes</p>
         <p class="campo"><b>Empresa</b>Queirós &amp; Moreira</p>
-        <p class="campo"><b>Email</b>t.gomes@queiros.pt</p>
+        <p class="campo"><b>Email</b><span class="privado">t.gomes@queiros.pt</span></p>
         <p class="campo"><b>LinkedIn</b>/in/tiago-gomes</p>
         <p class="campo"><b>Sinal</b><span class="sinal">Entrou em novo mercado</span></p>
       </div>
@@ -189,9 +193,9 @@ section{width:1080px;height:1350px;position:relative;overflow:hidden;display:blo
     <h2 class="titulo serif">Vê todas as tuas conversas<br>no mesmo sítio</h2>
     <div class="palco">
       <svg viewBox="0 0 952 560"><g stroke="#0E0C0B" stroke-width="4" fill="#0E0C0B">
-        <path d="M400 256 L168 390" fill="none"/><circle cx="168" cy="390" r="9"/><circle cx="400" cy="256" r="9"/>
-        <path d="M476 268 L476 390" fill="none"/><circle cx="476" cy="390" r="9"/><circle cx="476" cy="268" r="9"/>
-        <path d="M552 256 L784 390" fill="none"/><circle cx="784" cy="390" r="9"/><circle cx="552" cy="256" r="9"/>
+        <path d="M400 300 L168 430" fill="none"/><circle cx="168" cy="430" r="9"/><circle cx="400" cy="300" r="9"/>
+        <path d="M476 300 L476 430" fill="none"/><circle cx="476" cy="430" r="9"/><circle cx="476" cy="300" r="9"/>
+        <path d="M552 300 L784 430" fill="none"/><circle cx="784" cy="430" r="9"/><circle cx="552" cy="300" r="9"/>
       </g></svg>
       <div class="nucleo"><span class="etiqueta-nucleo">Respostas<br>Centralizadas</span></div>
       <div class="ramos">
@@ -200,6 +204,7 @@ section{width:1080px;height:1350px;position:relative;overflow:hidden;display:blo
         <p class="ramo">Todas as<br>campanhas</p>
       </div>
     </div>
+    <p class="legenda">Não gastes mais tempo à procura<br>das conversas com as leads</p>
   </div>
 </section>
 
@@ -224,9 +229,9 @@ section{width:1080px;height:1350px;position:relative;overflow:hidden;display:blo
           <li>Follow-up automático até responder</li>
           <li>Mensagens, respostas e oportunidades organizadas</li>
         </ul>
-        <img class="selo" src="../../media/marca/logo-escuro.png" alt="GenitecSales">
       </div>
     </div>
+    <p class="legenda">Podes criar sequências de mensagens LinkedIn e email na mesma campanha, a escolha é tua</p>
   </div>
 </section>
 
@@ -271,12 +276,12 @@ section{width:1080px;height:1350px;position:relative;overflow:hidden;display:blo
         <span class="circulo"></span>
         <div>
           <p class="ttitulo">Marcar segunda reunião</p>
-          <p class="tdesc">O Ricardo pediu para remarcar e não deixou data. Fazer follow-up.<br>
+          <p class="tdesc">Lembrete criado por mim: o Ricardo pediu para remarcar e não deixou data.<br>
           até <span class="prazo">10/11/2026</span> · campanha Têxtil e calçado · Ricardo</p>
         </div>
       </div>
     </div>
-    <p class="legenda">A campanha cria a tarefa. A tarefa vira negócio.</p>
+    <p class="legenda">Organiza todas as tuas tarefas e oportunidades</p>
   </div>
 </section>
 
@@ -285,7 +290,6 @@ section{width:1080px;height:1350px;position:relative;overflow:hidden;display:blo
   <div class="luz"></div>
   <svg class="ruido" width="1080" height="1350"><rect width="1080" height="1350" filter="url(#grao)"/></svg>
   <div class="conteudo">
-    <p class="segreda">(Envia a um amigo)</p>
     <h2 class="titulo serif">A lista de espera<br>está aberta</h2>
     <div class="qr"><span>QR: media/qr-lista.png</span></div>
     <p class="assinatura"><img src="../../media/marca/logo-escuro.png" alt="GenitecSales"></p>
