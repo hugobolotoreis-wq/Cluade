@@ -74,3 +74,19 @@ O `base.css` carrega Instrument Serif, Archivo e IBM Plex Mono do Google Fonts. 
 precisa de acesso a fonts.googleapis.com e fonts.gstatic.com. Se o servidor não tiver
 saída para lá, descarrega os `.woff2` para `templates/fontes/` e troca o `@import` por
 regras `@font-face`. Sem isto, tudo sai em Arial e perde a identidade.
+
+## Carrossel de referência
+
+`templates/referencia/carrossel-referencia.html` é o padrão visual. Seis slides, seis
+composições diferentes. Rende-se com `node scripts/referencia.mjs <pasta>`.
+
+Regra que vem daqui: **num carrossel, nenhum slide repete a composição do anterior.**
+A capa é tipografia sobre gradiente. Depois alternam colagem, diagrama, comparação e
+conversa. O último é sempre CTA com QR.
+
+Os quatro elementos fixos que atravessam todos os slides, e só esses:
+rótulo de módulo, pastilha de estado, título em serifa, fundo sólido ou gradiente da paleta.
+
+Fontes: Instrument Serif (títulos), Archivo (texto), Caveat (notas à mão), IBM Plex Mono.
+Se o servidor não chegar ao Google Fonts, o render cai para Georgia e Arial e perde a
+identidade. Descarregar os .woff2 para `templates/fontes/` resolve de vez.
