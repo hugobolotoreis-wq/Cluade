@@ -2,30 +2,20 @@
 <title>Carrossel de referencia GenitecSales</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Archivo:wght@400;500;600;700;800&family=Caveat:wght@500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,400;6..72,500;6..72,600&family=Archivo:wght@400;500;600;700;800&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
 <style>
 :root{
   --bg:#0E0C0B; --ink:#F4EFE9; --accent:#E4571D; --accent-2:#FF8A4C;
-  --display:'Instrument Serif',Georgia,serif;
+  --display:'Newsreader','Instrument Serif',Georgia,serif;
   --fonte:'Archivo','Helvetica Neue',Arial,sans-serif;
-  --mao:'Caveat',cursive;
   --mono:'IBM Plex Mono',monospace;
 }
 *{margin:0;padding:0;box-sizing:border-box}
 body{background:#2a2a2a;font-family:var(--fonte)}
 section{width:1080px;height:1350px;position:relative;overflow:hidden;display:block;margin:0 auto 24px}
 
-/* ---------- elementos partilhados ---------- */
-.rotulo{display:flex;gap:16px;align-items:center;justify-content:center;
-  font-weight:600;font-size:33px;letter-spacing:-.4px}
-.pastilha{font-weight:600;font-size:28px;padding:9px 24px;border-radius:999px}
-.p-constru{background:var(--accent-2);color:var(--bg)}
-.p-viva{background:#8FE0A8;color:#0E0C0B}
-.p-beta{background:#FFD166;color:#0E0C0B}
-.serif{font-family:var(--display);line-height:.98;letter-spacing:-1px}
-.mao{font-family:var(--mao);font-weight:600}
-
-/* ruido por cima dos gradientes */
+.rotulo{text-align:center;font-weight:600;font-size:33px;letter-spacing:-.4px}
+.serif{font-family:var(--display);font-weight:500;line-height:1.0;letter-spacing:-1.5px}
 .ruido{position:absolute;inset:0;opacity:.5;mix-blend-mode:overlay;pointer-events:none}
 
 /* ---------- 1. CAPA ---------- */
@@ -37,113 +27,114 @@ section{width:1080px;height:1350px;position:relative;overflow:hidden;display:blo
    radial-gradient(58% 44% at 64% 104%, var(--accent) 0%, rgba(228,87,29,0) 70%),
    radial-gradient(85% 55% at 42% 116%, #B5431A 0%, rgba(14,12,11,0) 78%);
   filter:blur(6px)}
-#s1 .titulo{position:absolute;left:88px;top:170px;color:var(--accent-2);
-  font-size:152px;z-index:2}
+#s1 .titulo{position:absolute;left:88px;top:176px;color:var(--accent-2);
+  font-size:154px;z-index:2}
 #s1 .l2{display:inline-block;margin-left:120px}
 #s1 .l3{display:inline-block;margin-left:34px}
-#s1 .flor{width:58px;vertical-align:super;margin-left:10px}
-#s1 .pe{position:absolute;left:150px;bottom:132px;color:var(--bg);
-  font-weight:700;font-size:54px;line-height:1.18;z-index:2}
+#s1 .pe{position:absolute;left:96px;right:96px;bottom:120px;z-index:2}
+#s1 .pe img{height:62px;display:block;margin-bottom:26px}
+#s1 .pe p{color:var(--bg);font-weight:700;font-size:50px;line-height:1.2}
 
-/* ---------- 2. COLAGEM ---------- */
-#s2{background:var(--ink);color:var(--bg);padding:96px 72px}
-#s2 .papel{position:absolute;inset:0;opacity:.35;
-  background:radial-gradient(120% 90% at 50% 0%, #fff 0%, rgba(255,255,255,0) 70%)}
-#s2 .conteudo{position:relative;height:100%;display:flex;flex-direction:column}
-#s2 .titulo{font-size:104px;text-align:center;margin-top:46px}
-#s2 .fila{flex:1;display:flex;align-items:center;justify-content:center;position:relative}
-#s2 .cartao{width:290px;height:380px;background:#1B3A5C;position:relative;
-  box-shadow:0 18px 40px rgba(0,0,0,.28);border:14px solid #F8F6F2;border-bottom-width:56px}
-#s2 .cartao:nth-of-type(1){transform:rotate(-7deg) translateX(46px)}
-#s2 .cartao:nth-of-type(2){transform:rotate(2deg);z-index:3}
-#s2 .cartao:nth-of-type(3){transform:rotate(8deg) translateX(-46px)}
-#s2 .cargo{position:absolute;left:0;right:0;bottom:-44px;text-align:center;
-  font-weight:600;font-size:26px;color:var(--bg)}
-#s2 .selo{position:absolute;left:50%;top:44%;transform:translate(-50%,-50%);
-  width:150px;height:150px;border-radius:50%;background:var(--accent);
-  display:flex;align-items:center;justify-content:center}
-#s2 .garatuja{position:absolute;color:var(--bg);font-size:44px;line-height:1.1}
-#s2 .g1{left:-4px;top:16px;transform:rotate(-9deg);max-width:300px}
-#s2 .g2{right:0px;top:10px;transform:rotate(6deg);max-width:250px}
-#s2 .g3{right:30px;bottom:-34px;transform:rotate(-4deg)}
-#s2 .legenda{text-align:center;font-weight:600;font-size:56px;line-height:1.15;
-  max-width:860px;margin:54px auto 0}
+/* ---------- 2. CARTOES DE CONTACTO ---------- */
+#s2{background:var(--ink);color:var(--bg);padding:96px 64px}
+#s2 .conteudo{height:100%;display:flex;flex-direction:column}
+#s2 .titulo{font-size:104px;text-align:center;margin-top:44px}
+#s2 .fila{flex:1;display:flex;align-items:center;justify-content:center}
+#s2 .cartao{width:300px;background:#F8F6F2;border:3px solid rgba(14,12,11,.14);
+  padding:34px 30px;box-shadow:0 18px 40px rgba(0,0,0,.16)}
+#s2 .cartao:nth-of-type(1){transform:rotate(-5deg) translateX(18px)}
+#s2 .cartao:nth-of-type(2){transform:rotate(1.5deg);z-index:3;background:#fff}
+#s2 .cartao:nth-of-type(3){transform:rotate(5deg) translateX(-18px)}
+#s2 .campo{font-size:25px;line-height:1.25;margin-bottom:22px}
+#s2 .campo b{display:block;font-weight:700;font-size:21px;letter-spacing:1.4px;
+  text-transform:uppercase;color:rgba(14,12,11,.45);margin-bottom:5px}
+#s2 .sinal{color:var(--accent);font-weight:600}
+#s2 .legenda{text-align:center;font-weight:600;font-size:46px;line-height:1.22;
+  max-width:880px;margin:44px auto 0}
 
-/* ---------- 3. DIAGRAMA ---------- */
-#s3{background:var(--accent);color:var(--bg);padding:96px 72px}
+/* ---------- 3. RESPOSTAS CENTRALIZADAS ---------- */
+#s3{background:var(--accent);color:var(--bg);padding:96px 64px}
 #s3 .conteudo{height:100%;display:flex;flex-direction:column}
-#s3 .titulo{font-size:104px;text-align:center;margin-top:46px}
-#s3 .palco{flex:1;position:relative;margin-top:30px}
-#s3 .nucleo{position:absolute;left:50%;top:40px;transform:translateX(-50%);
-  width:470px;height:260px;border-radius:28px;background:var(--ink);color:var(--bg);
+#s3 .titulo{font-size:84px;text-align:center;margin-top:44px}
+#s3 .palco{flex:1;position:relative;margin-top:26px}
+#s3 .nucleo{position:absolute;left:50%;top:26px;transform:translateX(-50%);
+  width:620px;height:230px;background:var(--ink);color:var(--bg);
   display:flex;align-items:center;justify-content:center;
-  box-shadow:0 26px 0 rgba(14,12,11,.18), 0 30px 60px rgba(0,0,0,.25)}
-#s3 .nucleo::before,#s3 .nucleo::after{content:"";position:absolute;height:24px;
-  border-radius:16px 16px 0 0;background:rgba(244,239,233,.55)}
-#s3 .nucleo::before{top:-24px;left:34px;right:34px}
-#s3 .nucleo::after{top:-44px;left:70px;right:70px;background:rgba(244,239,233,.3)}
-#s3 .etiqueta-nucleo{font-weight:700;font-size:56px}
+  box-shadow:14px 14px 0 rgba(14,12,11,.22)}
+#s3 .etiqueta-nucleo{font-weight:700;font-size:52px;text-align:center;line-height:1.1}
 #s3 svg{position:absolute;inset:0}
-#s3 .ramos{position:absolute;left:0;right:0;bottom:0;display:flex}
-#s3 .ramo{flex:1;text-align:center;font-weight:600;font-size:40px;line-height:1.15;padding:0 10px}
-#s3 .icone{font-size:50px;display:block;margin-bottom:12px}
+#s3 .ramos{position:absolute;left:0;right:0;top:430px;display:flex}
+#s3 .ramo{flex:1;text-align:center;font-weight:700;font-size:46px;line-height:1.15;padding:0 10px}
+#s3 .marca{position:absolute;left:50%;bottom:4px;transform:translateX(-50%);height:46px;opacity:.75}
 
 /* ---------- 4. COMPARACAO ---------- */
-#s4{background:var(--bg);color:var(--ink);padding:96px 72px}
+#s4{background:var(--bg);color:var(--ink);padding:96px 64px}
 #s4 .conteudo{height:100%;display:flex;flex-direction:column}
-#s4 .titulo{font-size:104px;text-align:center;margin-top:46px;color:var(--ink)}
-#s4 .palco{flex:1;display:flex;align-items:center;gap:34px}
-#s4 .caixa{flex:1;border-radius:26px;padding:46px 38px;height:600px;position:relative}
-#s4 .mau{background:rgba(244,239,233,.07);border:2px dashed rgba(244,239,233,.3)}
+#s4 .titulo{font-size:100px;text-align:center;margin-top:44px;color:var(--ink)}
+#s4 .palco{flex:1;display:flex;align-items:center;gap:30px}
+#s4 .caixa{flex:1;padding:46px 36px;height:620px;position:relative}
+#s4 .mau{background:rgba(244,239,233,.07);border:2px solid rgba(244,239,233,.26)}
 #s4 .bom{background:var(--accent);color:var(--bg)}
 #s4 .cab{font-weight:700;font-size:40px;margin-bottom:34px;line-height:1.1}
-#s4 li{list-style:none;font-size:32px;line-height:1.3;margin-bottom:28px;
+#s4 li{list-style:none;font-size:31px;line-height:1.3;margin-bottom:28px;
   padding-left:46px;position:relative}
 #s4 li::before{position:absolute;left:0;font-weight:700}
-#s4 .mau li::before{content:"\00d7";color:var(--accent-2);font-size:42px;top:-6px}
-#s4 .bom li::before{content:"\2713";font-size:34px}
-#s4 .marca-eu{position:absolute;right:-16px;top:-26px;background:var(--ink);color:var(--bg);
-  font-weight:700;font-size:30px;padding:10px 22px;border-radius:999px;transform:rotate(4deg)}
+#s4 .mau li::before{content:"\00d7";color:var(--accent-2);font-size:40px;top:-6px}
+#s4 .bom li::before{content:"\2713";font-size:32px}
+#s4 .bom .selo{position:absolute;right:30px;bottom:30px;height:40px}
 
-/* ---------- 5. CONVERSA ---------- */
-#s5{background:var(--ink);color:var(--bg);padding:96px 72px}
+/* ---------- 5. CRM E TAREFAS ---------- */
+#s5{background:var(--ink);color:var(--bg);padding:96px 56px}
 #s5 .conteudo{height:100%;display:flex;flex-direction:column}
-#s5 .titulo{font-size:100px;text-align:center;margin-top:46px}
-#s5 .janela{flex:1;margin-top:48px;margin-bottom:20px;background:#FBF9F5;border-radius:26px;
-  padding:44px 40px;display:flex;flex-direction:column;justify-content:center;gap:30px;
-  box-shadow:0 20px 50px rgba(0,0,0,.1)}
-#s5 .linha{display:flex;gap:22px;align-items:flex-start}
-#s5 .av{width:66px;height:66px;border-radius:14px;flex:none;display:flex;
-  align-items:center;justify-content:center;font-weight:800;font-size:32px}
-#s5 .av-c{background:var(--accent);color:var(--ink)}
-#s5 .av-m{background:#D9D4CC;color:var(--bg)}
-#s5 .quem{font-weight:700;font-size:27px}
-#s5 .hora{font-weight:400;font-size:25px;color:rgba(14,12,11,.45);margin-left:12px}
-#s5 .diz{font-size:35px;line-height:1.3;margin-top:6px;max-width:780px}
+#s5 .titulo{font-size:96px;text-align:center;margin-top:44px}
+#s5 .ecra{flex:1;margin-top:44px;background:#111010;border:2px solid #262323;
+  padding:30px 26px;display:flex;flex-direction:column;
+  box-shadow:0 24px 50px rgba(0,0,0,.25)}
+#s5 .barra{display:flex;align-items:center;gap:14px;margin-bottom:26px}
+#s5 .barra img{height:30px}
+#s5 .barra .sep{flex:1}
+#s5 .barra .resumo{font-size:22px;color:#8d8781}
+#s5 .barra .resumo b{color:#F4EFE9}
+#s5 .colunas{display:flex;gap:16px;flex:1}
+#s5 .coluna{flex:1;background:#171515;border:1px solid #262323;padding:18px 14px}
+#s5 .ctitulo{font-size:17px;letter-spacing:1px;text-transform:uppercase;
+  color:#8d8781;display:flex;justify-content:space-between;gap:8px;margin-bottom:16px;white-space:nowrap}
+#s5 .negocio{background:#1E1B1A;border:1px solid #2c2827;padding:16px 14px;margin-bottom:12px}
+#s5 .nlinha{display:flex;justify-content:space-between;align-items:baseline}
+#s5 .nome{font-weight:700;font-size:24px;color:#F4EFE9}
+#s5 .valor{font-weight:600;font-size:21px;color:#F4EFE9}
+#s5 .quem{font-size:19px;color:#8d8781;margin-top:5px}
+#s5 .accao{font-size:19px;color:var(--accent-2);margin-top:9px}
+#s5 .tarefa{margin-top:22px;background:#171515;border:1px solid #262323;padding:20px 18px;
+  display:flex;gap:16px;align-items:flex-start}
+#s5 .circulo{width:26px;height:26px;border:2px solid #4a4542;border-radius:50%;flex:none;margin-top:3px}
+#s5 .ttitulo{font-weight:700;font-size:24px;color:#F4EFE9}
+#s5 .tdesc{font-size:20px;color:#8d8781;margin-top:6px;line-height:1.3}
+#s5 .tdesc .prazo{color:#F4EFE9;font-weight:600}
+#s5 .legenda{text-align:center;font-weight:600;font-size:40px;margin-top:34px}
 
 /* ---------- 6. CTA ---------- */
-#s6{background:var(--accent-2)}
+#s6{background:var(--bg)}
 #s6 .luz{position:absolute;inset:-10%;
   background:
-   radial-gradient(60% 50% at 12% 8%, #FFE9A8 0%, rgba(255,233,168,0) 72%),
-   radial-gradient(55% 45% at 88% 4%, #FFC9A0 0%, rgba(255,201,160,0) 70%),
-   radial-gradient(70% 55% at 50% 108%, var(--accent) 0%, rgba(228,87,29,0) 72%),
-   radial-gradient(60% 40% at 92% 92%, #B5431A 0%, rgba(181,67,26,0) 70%);
+   radial-gradient(48% 36% at 10% 74%, #FFE08A 0%, rgba(255,224,138,0) 70%),
+   radial-gradient(52% 40% at 34% 92%, var(--accent-2) 0%, rgba(255,138,76,0) 70%),
+   radial-gradient(58% 44% at 64% 104%, var(--accent) 0%, rgba(228,87,29,0) 70%),
+   radial-gradient(85% 55% at 42% 116%, #B5431A 0%, rgba(14,12,11,0) 78%);
   filter:blur(6px)}
 #s6 .conteudo{position:relative;height:100%;display:flex;flex-direction:column;
-  align-items:center;padding:110px 72px 96px;text-align:center}
-#s6 .segreda{font-family:var(--mao);font-size:52px;color:var(--bg)}
-#s6 .titulo{font-size:122px;color:var(--bg);margin-top:10px}
-#s6 .qr{margin-top:auto;width:420px;height:420px;background:var(--ink);border-radius:36px;
+  align-items:center;padding:150px 72px 120px;text-align:center}
+#s6 .segreda{font-weight:600;font-size:40px;color:var(--ink);letter-spacing:.5px}
+#s6 .titulo{font-size:124px;color:var(--accent-2);margin-top:28px}
+#s6 .qr{margin-top:84px;width:400px;height:400px;background:var(--ink);
   display:flex;align-items:center;justify-content:center;
-  box-shadow:0 24px 60px rgba(0,0,0,.35)}
-#s6 .qr span{font-family:var(--mono);font-size:26px;color:rgba(14,12,11,.4)}
-#s6 .assinatura{color:var(--bg)}
-#s6 .assinatura{margin-top:auto;font-family:var(--display);font-size:80px;color:var(--bg)}
+  box-shadow:0 24px 60px rgba(0,0,0,.45)}
+#s6 .qr span{font-family:var(--mono);font-size:24px;color:rgba(14,12,11,.4)}
+#s6 .assinatura{margin-top:auto}
+#s6 .assinatura img{height:64px}
 </style></head>
 <body>
 
-<!-- ruido reutilizavel -->
 <svg width="0" height="0" style="position:absolute"><filter id="grao">
 <feTurbulence type="fractalNoise" baseFrequency="0.85" numOctaves="3"/>
 <feColorMatrix type="saturate" values="0"/></filter></svg>
@@ -152,54 +143,61 @@ section{width:1080px;height:1350px;position:relative;overflow:hidden;display:blo
 <section id="s1">
   <div class="luz"></div>
   <svg class="ruido" width="1080" height="1350"><rect width="1080" height="1350" filter="url(#grao)"/></svg>
-  <h1 class="titulo serif"><span class="l1">O que vem</span><svg class="flor" viewBox="0 0 100 100"><g fill="#E4571D">
-    <path d="M50 2 L58 40 L42 40 Z"/><path d="M50 98 L42 60 L58 60 Z"/>
-    <path d="M2 50 L40 42 L40 58 Z"/><path d="M98 50 L60 58 L60 42 Z"/>
-    <path d="M16 16 L46 38 L38 46 Z"/><path d="M84 84 L54 62 L62 54 Z"/>
-    <path d="M84 16 L62 46 L54 38 Z"/><path d="M16 84 L38 54 L46 62 Z"/></g></svg><br><span class="l2">aí no</span><br><span class="l3">GenitecSales</span></h1>
-  <p class="pe">Tudo o que mudou<br>este mês →</p>
+  <h1 class="titulo serif"><span>O que vem</span><br><span class="l2">aí no</span><br><span class="l3">GenitecSales</span></h1>
+  <div class="pe">
+    <img src="../../media/marca/logo-escuro.png" alt="GenitecSales">
+    <p>Vamos automatizar as vendas<br>da tua empresa? →</p>
+  </div>
 </section>
 
 <!-- 2 -->
 <section id="s2">
-  <div class="papel"></div>
   <div class="conteudo">
-    <div class="rotulo"><span>Pesquisa de decisores</span><span class="pastilha p-constru">Em construção</span></div>
+    <p class="rotulo">Pesquisa de decisores</p>
     <h2 class="titulo serif">Decide com dados,<br>não por instinto</h2>
     <div class="fila">
-      <p class="garatuja mao g1">não te esqueças<br>do 2.º follow-up!</p>
-      <p class="garatuja mao g2">este responde ✓</p>
-      <p class="garatuja mao g3">e este nunca abriu nada</p>
-      <div class="cartao"><p class="cargo">Diretor Comercial</p></div>
-      <div class="cartao"><div class="selo">
-        <svg width="80" height="80" viewBox="0 0 100 100"><g fill="#F4EFE9">
-        <path d="M50 2 L58 40 L42 40 Z"/><path d="M50 98 L42 60 L58 60 Z"/>
-        <path d="M2 50 L40 42 L40 58 Z"/><path d="M98 50 L60 58 L60 42 Z"/>
-        <path d="M16 16 L46 38 L38 46 Z"/><path d="M84 84 L54 62 L62 54 Z"/>
-        <path d="M84 16 L62 46 L54 38 Z"/><path d="M16 84 L38 54 L46 62 Z"/></g></svg>
-      </div><p class="cargo">CEO</p></div>
-      <div class="cartao"><p class="cargo">Head de Marketing</p></div>
+      <div class="cartao">
+        <p class="campo"><b>Nome</b>Ricardo Silva</p>
+        <p class="campo"><b>Empresa</b>Tintex Textiles</p>
+        <p class="campo"><b>Email</b>r.silva@tintex.pt</p>
+        <p class="campo"><b>LinkedIn</b>/in/ricardo-silva</p>
+        <p class="campo"><b>Sinal</b><span class="sinal">Abriu vaga de export</span></p>
+      </div>
+      <div class="cartao">
+        <p class="campo"><b>Nome</b>Bruna Nunes</p>
+        <p class="campo"><b>Empresa</b>DGL Têxtil</p>
+        <p class="campo"><b>Email</b>bruna@dgltextil.pt</p>
+        <p class="campo"><b>LinkedIn</b>/in/bruna-nunes</p>
+        <p class="campo"><b>Sinal</b><span class="sinal">Nova coleção em FR</span></p>
+      </div>
+      <div class="cartao">
+        <p class="campo"><b>Nome</b>Tiago Gomes</p>
+        <p class="campo"><b>Empresa</b>Queirós &amp; Moreira</p>
+        <p class="campo"><b>Email</b>t.gomes@queiros.pt</p>
+        <p class="campo"><b>LinkedIn</b>/in/tiago-gomes</p>
+        <p class="campo"><b>Sinal</b><span class="sinal">Entrou em novo mercado</span></p>
+      </div>
     </div>
-    <p class="legenda">O mais provável de<br>responder esta semana</p>
+    <p class="legenda">Encontra os contactos do teu perfil de cliente ideal, em vez de procurar de forma manual</p>
   </div>
 </section>
 
 <!-- 3 -->
 <section id="s3">
   <div class="conteudo">
-    <div class="rotulo"><span>Unibox</span><span class="pastilha p-viva">Já disponível</span></div>
-    <h2 class="titulo serif">Vê a conversa toda<br>com cada conta</h2>
+    <p class="rotulo">Caixa de entrada</p>
+    <h2 class="titulo serif">Vê todas as tuas conversas<br>no mesmo sítio</h2>
     <div class="palco">
-      <svg viewBox="0 0 936 640"><g stroke="#0E0C0B" stroke-width="4" fill="#0E0C0B">
-        <path d="M400 350 L150 500" fill="none"/><circle cx="150" cy="500" r="9"/><circle cx="400" cy="350" r="9"/>
-        <path d="M468 372 L468 500" fill="none"/><circle cx="468" cy="500" r="9"/><circle cx="468" cy="372" r="9"/>
-        <path d="M536 350 L786 500" fill="none"/><circle cx="786" cy="500" r="9"/><circle cx="536" cy="350" r="9"/>
+      <svg viewBox="0 0 952 560"><g stroke="#0E0C0B" stroke-width="4" fill="#0E0C0B">
+        <path d="M400 256 L168 390" fill="none"/><circle cx="168" cy="390" r="9"/><circle cx="400" cy="256" r="9"/>
+        <path d="M476 268 L476 390" fill="none"/><circle cx="476" cy="390" r="9"/><circle cx="476" cy="268" r="9"/>
+        <path d="M552 256 L784 390" fill="none"/><circle cx="784" cy="390" r="9"/><circle cx="552" cy="256" r="9"/>
       </g></svg>
-      <div class="nucleo"><span class="etiqueta-nucleo">Unibox</span></div>
+      <div class="nucleo"><span class="etiqueta-nucleo">Respostas<br>Centralizadas</span></div>
       <div class="ramos">
-        <p class="ramo"><span class="icone">✉️</span>respostas<br>de email</p>
-        <p class="ramo"><span class="icone">💬</span>mensagens<br>do LinkedIn</p>
-        <p class="ramo"><span class="icone">✅</span>tarefas de<br>follow-up</p>
+        <p class="ramo">Email</p>
+        <p class="ramo">LinkedIn</p>
+        <p class="ramo">Todas as<br>campanhas</p>
       </div>
     </div>
   </div>
@@ -208,25 +206,25 @@ section{width:1080px;height:1350px;position:relative;overflow:hidden;display:blo
 <!-- 4 -->
 <section id="s4">
   <div class="conteudo">
-    <div class="rotulo"><span>Campanhas</span><span class="pastilha p-beta">Beta fechada</span></div>
+    <p class="rotulo">Campanhas</p>
     <h2 class="titulo serif">Monta as campanhas<br>à tua maneira</h2>
     <div class="palco">
       <div class="caixa mau">
-        <p class="cab">A folha de cálculo</p>
+        <p class="cab">Prospeção manual</p>
         <ul>
-          <li>Copiar e colar contacto a contacto</li>
+          <li>Copiar e colar email contacto a contacto</li>
           <li>O follow-up depende da memória</li>
           <li>Ninguém sabe quem já foi contactado</li>
         </ul>
       </div>
       <div class="caixa bom">
-        <span class="marca-eu">nós</span>
         <p class="cab">GenitecSales</p>
         <ul>
-          <li>Sequência montada uma vez</li>
+          <li>Sequência de emails e mensagens montada uma vez</li>
           <li>Follow-up automático até responder</li>
-          <li>Tarefa criada quando alguém responde</li>
+          <li>Mensagens, respostas e oportunidades organizadas</li>
         </ul>
+        <img class="selo" src="../../media/marca/logo-escuro.png" alt="GenitecSales">
       </div>
     </div>
   </div>
@@ -235,25 +233,50 @@ section{width:1080px;height:1350px;position:relative;overflow:hidden;display:blo
 <!-- 5 -->
 <section id="s5">
   <div class="conteudo">
-    <div class="rotulo"><span>Tarefas e CRM</span><span class="pastilha p-beta">Beta fechada</span></div>
-    <h2 class="titulo serif">Todas as respostas<br>num só sítio</h2>
-    <div class="janela">
-      <div class="linha"><div class="av av-c">C</div><div>
-        <p class="quem">Comercial<span class="hora">14:40</span></p>
-        <p class="diz">o CEO da Tintex respondeu ao segundo email</p></div></div>
-      <div class="linha"><div class="av av-m">M</div><div>
-        <p class="quem">Marketing<span class="hora">14:40</span></p>
-        <p class="diz">àquele que eu disse que não ia funcionar?</p></div></div>
-      <div class="linha"><div class="av av-c">C</div><div>
-        <p class="quem">Comercial<span class="hora">14:41</span></p>
-        <p class="diz">esse. já tenho a conversa toda aberta aqui, o LinkedIn e o email na mesma página</p></div></div>
-      <div class="linha"><div class="av av-m">M</div><div>
-        <p class="quem">Marketing<span class="hora">14:41</span></p>
-        <p class="diz">ok isso é mesmo útil</p></div></div>
-      <div class="linha"><div class="av av-c">C</div><div>
-        <p class="quem">Comercial<span class="hora">14:42</span></p>
-        <p class="diz">já marquei a reunião 🙂</p></div></div>
+    <p class="rotulo">Tarefas e CRM</p>
+    <h2 class="titulo serif">Do primeiro contacto<br>ao negócio fechado</h2>
+    <div class="ecra">
+      <div class="barra">
+        <img src="../../media/marca/logo-claro.png" alt="GenitecSales">
+        <span class="sep"></span>
+        <span class="resumo">Em aberto: <b>3 (5.600 €)</b></span>
+      </div>
+      <div class="colunas">
+        <div class="coluna">
+          <p class="ctitulo"><span>Reunião marcada</span><span>1.900 €</span></p>
+          <div class="negocio">
+            <div class="nlinha"><span class="nome">Queirós</span><span class="valor">1.900 €</span></div>
+            <p class="quem">Tiago · Queirós &amp; Moreira</p>
+            <p class="accao">Follow-up a remarcar · 06/11</p>
+          </div>
+        </div>
+        <div class="coluna">
+          <p class="ctitulo"><span>Negociação</span><span>3.700 €</span></p>
+          <div class="negocio">
+            <div class="nlinha"><span class="nome">DGL</span><span class="valor">1.850 €</span></div>
+            <p class="quem">Bruna · DGL Têxtil</p>
+            <p class="accao">Marcar segunda reunião · 02/11</p>
+          </div>
+          <div class="negocio">
+            <div class="nlinha"><span class="nome">Tintex</span><span class="valor">1.850 €</span></div>
+            <p class="quem">Ricardo · Tintex Textiles</p>
+            <p class="accao">Segunda reunião · 02/11</p>
+          </div>
+        </div>
+        <div class="coluna">
+          <p class="ctitulo"><span>Ganho</span><span>0 €</span></p>
+        </div>
+      </div>
+      <div class="tarefa">
+        <span class="circulo"></span>
+        <div>
+          <p class="ttitulo">Marcar segunda reunião</p>
+          <p class="tdesc">O Ricardo pediu para remarcar e não deixou data. Fazer follow-up.<br>
+          até <span class="prazo">10/11/2026</span> · campanha Têxtil e calçado · Ricardo</p>
+        </div>
+      </div>
     </div>
+    <p class="legenda">A campanha cria a tarefa. A tarefa vira negócio.</p>
   </div>
 </section>
 
@@ -262,10 +285,10 @@ section{width:1080px;height:1350px;position:relative;overflow:hidden;display:blo
   <div class="luz"></div>
   <svg class="ruido" width="1080" height="1350"><rect width="1080" height="1350" filter="url(#grao)"/></svg>
   <div class="conteudo">
-    <p class="segreda">(manda isto a quem prospeta contigo)</p>
+    <p class="segreda">(Envia a um amigo)</p>
     <h2 class="titulo serif">A lista de espera<br>está aberta</h2>
     <div class="qr"><span>QR: media/qr-lista.png</span></div>
-    <p class="assinatura">GenitecSales</p>
+    <p class="assinatura"><img src="../../media/marca/logo-escuro.png" alt="GenitecSales"></p>
   </div>
 </section>
 
